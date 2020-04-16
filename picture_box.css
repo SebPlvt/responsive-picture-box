@@ -1,0 +1,82 @@
+
+header {
+    text-align: center;
+}
+
+body {
+    background-color: silver;
+}
+
+.catalogue {
+    margin: 5px;
+    border: solid 2px white;
+    background-color: dodgerblue;
+    padding: 10px;
+}
+
+.cadre {
+    margin: 5px;
+}
+
+.img {
+    margin: 3px;
+}
+
+.img:hover {
+    /*rotate: 10deg;
+    transition: ease-in-out;*/
+    transform: rotate(10deg);
+}
+
+.big_img {
+    max-width:130%;
+    height:auto;
+}
+
+
+@media only screen and (max-width:767px) {
+    .miniatures {
+        width: 100%;
+        height: 110%;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+
+    .img {
+        margin: 0px;
+    }
+
+    .photo {
+        padding: 50px;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:991px){
+    .miniatures {
+        height: 20.5%;
+        overflow-y: auto;
+        padding: 15px;
+    }
+
+    .img {
+        margin: 5px;
+    }
+}
+
+@media only screen and (min-width:992px){
+    .miniatures {
+        height: 39%;
+        overflow-y: auto;
+        padding: 15px;
+    }
+
+    .img {
+        margin: 5px;
+    }
+}
+
+@media only screen and (min-width:992px) and (max-width:1200px){
+    .miniatures {
+        overflow-x: hidden;
+    }
+}
